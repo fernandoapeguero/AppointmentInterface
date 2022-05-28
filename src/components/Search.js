@@ -50,7 +50,7 @@ const DropDown = ({ toggle }) => {
   );
 };
 
-const Search = () => {
+const Search = ({ query, onQueryChange }) => {
   let [toggleForm, setToggleForm] = useState(false);
   return (
     <div className="py-5">
@@ -60,10 +60,13 @@ const Search = () => {
           <label htmlFor="query" className="sr-only" />
         </div>
         <input
+          onChange={(event) => {
+            onQueryChange(event.target.value);
+          }}
+          value={query}
           type="text"
           name="query"
           id="query"
-          value=""
           className="pl-8 rounded-md focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300"
           placeholder="Search"
         />
