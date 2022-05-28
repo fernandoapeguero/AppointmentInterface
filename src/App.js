@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import { BiTrash } from "react-icons/bi";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container mx-auto mt-3 font-thin">
+      <h1 className="text-5xl font-bold p-5">
+        {" "}
+        <BiTrash className="inline-block text-red-200 align-top" /> Your
+        Appointments
+      </h1>
     </div>
   );
 }
