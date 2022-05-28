@@ -2,9 +2,21 @@ import { BiHealth } from "react-icons/bi";
 import AddAppointment from "./components/AddAppointment";
 import AppointmentInfo from "./components/AppointmentInfo";
 import Search from "./components/Search";
-import appointmentList from "./data.json";
+import React, { useState, useEffect, useCallback } from "react";
 
 function App() {
+  const [appointmentList, setAppointmentList] = useState([]);
+
+  const fetchData = useCallback(() => {
+    fetch("./data.json")
+      .then((res) => res.json())
+      .then(setAppointmentList);
+  }, []);
+
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
+
   return (
     <div className="App container mx-auto mt-3 font-thin">
       <h1 className="text-5xl font-bold p-5">

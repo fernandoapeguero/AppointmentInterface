@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { BiSearch, BiCaretDown, BiCheck } from "react-icons/bi";
 
-const DropDown = ({ toggleForm }) => {
+const DropDown = ({ toggle }) => {
   return (
-    toggleForm && (
+    toggle && (
       <div
         className="origin-top-right absolute right-0 mt-2 w-56
         rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
@@ -80,7 +80,7 @@ const Search = () => {
               Sort By <BiCaretDown className="ml-2" />
             </button>
 
-            <DropDown toggleForm={toggleForm} />
+            <DropDown toggle={toggleForm} />
           </div>
         </div>
       </div>
