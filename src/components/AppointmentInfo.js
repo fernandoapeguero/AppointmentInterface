@@ -1,4 +1,5 @@
 import React from "react";
+import { BiTrash } from "react-icons/bi";
 
 const AppointmentInfo = ({ appointment }) => {
   return (
