@@ -1,5 +1,5 @@
-import { BiHealth, BiTrash } from "react-icons/bi";
-import AddAppointment from "./components/AddAppoinment";
+import { BiHealth } from "react-icons/bi";
+import AddAppointment from "./components/AddAppointment";
 import AppointmentInfo from "./components/AppointmentInfo";
 import Search from "./components/Search";
 import appointmentList from "./data.json";
@@ -18,7 +18,7 @@ function App() {
 
       <ul className="divided-y divide-gray-200 ">
         {appointmentList.map((appointment) => (
-          <AppointmentInfo appointment={appointment} />
+          <AppointmentInfo appointment={appointment} key={appointment.id} />
         ))}
       </ul>
     </div>
