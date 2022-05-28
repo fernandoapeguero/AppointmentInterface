@@ -1,7 +1,7 @@
 import React from "react";
 import { BiCalendarPlus } from "react-icons/bi";
 
-const AddAppoinment = () => {
+const AddAppointment = () => {
   return (
     <div>
       <button className="bg-blue-400 text-white px-2 py-3 w-full text-left rounded-t-md">
@@ -112,4 +112,4 @@ const AddAppoinment = () => {
   );
 };
 
-export default AddAppoinment;
+export default AddAppointment;
