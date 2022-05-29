@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fernandoapeguero/AppointmentInterface/static/css/main.e8791b50.css",
+    "main.js": "/fernandoapeguero/AppointmentInterface/static/js/main.1b88a3c7.js",
+    "index.html": "/fernandoapeguero/AppointmentInterface/index.html",
+    "main.e8791b50.css.map": "/fernandoapeguero/AppointmentInterface/static/css/main.e8791b50.css.map",
+    "main.1b88a3c7.js.map": "/fernandoapeguero/AppointmentInterface/static/js/main.1b88a3c7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8791b50.css",
+    "static/js/main.1b88a3c7.js"
+  ]
+}
